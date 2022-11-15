@@ -24,6 +24,8 @@ public class RandomQuotesControllerTest {
 
     @Autowired
     private AuthorRepository authorRepository;
+    
+    private RandomQuotesController test;
 
     @Test
     public void getHello() throws Exception {
@@ -38,7 +40,7 @@ public class RandomQuotesControllerTest {
     
     @Test
     public void ensureVersion() {
-        String ver = RandomQuotesController.getVersion();
+        String ver = test.getVersion();
         assertNotNull(ver);
     }
 }
