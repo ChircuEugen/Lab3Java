@@ -21,7 +21,7 @@ public class Author {
     )
     private List<Quote> quotes = new ArrayList<>();
 
-    protected Author() {
+    public Author() {
 
     }
 
