@@ -32,4 +32,11 @@ public class RandomQuotesControllerTest {
     public void ensureAuthorsExists() {
         assertTrue(authorRepository.count() != 0);
     }
+    
+    @Test
+    public void ensureVersion()
+    {
+        String ver = getVersion();
+        assertNotNull(ver);
+    }
 }
