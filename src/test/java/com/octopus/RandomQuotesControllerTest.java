@@ -1,6 +1,7 @@
 package com.octopus;
 
 import com.octopus.repository.AuthorRepository;
+import com.octopus.repository.QuoteRepository;
 import com.octopus.RandomQuotesController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
