@@ -53,7 +53,7 @@ public class RandomQuotesController {
                 "}";
     }
 
-    private String getVersion() {
+    public String getVersion() {
         try
         {
             final InputStream resourceAsStream = ObjectUtils.defaultIfNull(
