@@ -11,6 +11,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -35,8 +37,7 @@ public class RandomQuotesControllerTest {
     }
     
     @Test
-    public void ensureVersion()
-    {
+    public void ensureVersion() {
         String ver = getVersion();
         assertNotNull(ver);
     }
