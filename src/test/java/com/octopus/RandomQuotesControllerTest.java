@@ -12,8 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 //import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-//@SpringBootTest
-//@AutoConfigureMockMvc
+@SpringBootTest
 public class RandomQuotesControllerTest {
 
     @Autowired
