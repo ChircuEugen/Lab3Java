@@ -38,7 +38,7 @@ public class RandomQuotesControllerTest {
     
     @Test
     public void ensureVersion() {
-        String ver = RandomQuotesController.getVersion();
+        public String ver = RandomQuotesController.getVersion();
         assertNotNull(ver);
     }
 }
