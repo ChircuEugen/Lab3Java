@@ -44,10 +44,10 @@ public class RandomQuotesControllerTest {
         //assertTrue(quoteRepository.count() < 0);
     //}
     
-    @Test
-    public void checkAuthorExists() {
-        Author ent = authorRepository.findById(3L);
-        String name = ent.firstName;
-        assertEquals("Jonathan", name);
-    }
+    //@Test
+    //public void checkAuthorExists() {
+        //Author ent = authorRepository.findById(3L);
+        //String name = ent.firstName;
+        //assertEquals("Jonathan", name);
+    //}
 }
