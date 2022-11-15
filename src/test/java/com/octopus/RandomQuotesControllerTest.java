@@ -25,6 +25,7 @@ public class RandomQuotesControllerTest {
     @Autowired
     private AuthorRepository authorRepository;
     
+    @Autowired
     private RandomQuotesController test;
 
     @Test
@@ -40,7 +41,7 @@ public class RandomQuotesControllerTest {
     
     @Test
     public void ensureVersion() {
-        String ver = test.getVersion();
-        assertNotNull(ver);
+        //String ver = test.getVersion();
+        assertNotNull(test.getVersion);
     }
 }
