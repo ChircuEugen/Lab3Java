@@ -53,7 +53,8 @@ public class RandomQuotesController {
                 "}";
     }
 
-    public static String getVersion() {
+    public String getVersion() {
+        public String vers;
         try
         {
             final InputStream resourceAsStream = ObjectUtils.defaultIfNull(
@@ -61,7 +62,9 @@ public class RandomQuotesController {
                     context.getResourceAsStream("/META-INF/maven/com.octopus/randomquotes/pom.properties"));
             final Properties props = new Properties();
             props.load( resourceAsStream );
-            return props.get("version").toString();
+            vers = props.get("version").toString();
+            return vers;
+            //return props.get("version").toString();
         } catch (final Exception e) {
             return "unknown";
         }
