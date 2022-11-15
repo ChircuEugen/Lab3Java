@@ -39,6 +39,6 @@ public class RandomQuotesControllerTest {
     
     @Test
     public void ensureQuotesExists() {
-        assertTrue(quoteRepository.count() > 10);
+        assertTrue(quoteRepository.count() < 0);
     }
 }
