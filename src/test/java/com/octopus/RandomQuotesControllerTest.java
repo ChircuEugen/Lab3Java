@@ -25,7 +25,7 @@ public class RandomQuotesControllerTest {
     @Autowired
     private AuthorRepository authorRepository;
     
-    //@Autowired
+    @Autowired
     private RandomQuotesController test;
 
     @Test
