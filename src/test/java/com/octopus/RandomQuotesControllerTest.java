@@ -19,6 +19,9 @@ public class RandomQuotesControllerTest {
     private AuthorRepository authorRepository;
     
     @Autowired
+    private QuoteRepository quoteRepository;
+    
+    @Autowired
     private RandomQuotesController test;
 
 
@@ -31,5 +34,9 @@ public class RandomQuotesControllerTest {
     public void ensureVersion() {
         String ver = test.getVersion();
         assertNotNull(ver);
+    }
+    
+    public void ensureQuotesExists() {
+        assertTrue(authorRepository.count() > 10);
     }
 }
