@@ -47,7 +47,7 @@ public class RandomQuotesControllerTest {
     @Test
     public void checkAuthorExists() {
         Author ent = new Author();
-        ent.getFirstName();
+        String name = ent.getFirstName();
         assertEquals("Jonathan", name);
     }
 }
