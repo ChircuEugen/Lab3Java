@@ -46,7 +46,7 @@ public class RandomQuotesControllerTest {
     
     @Test
     public void checkAuthorExists() {
-        long id3 = 3L;
+        Long id3 = 3L;
         Author ent = authorRepository.findById(id3);
         String name = ent.getFirstName();
         assertEquals("Jonathan", name);
