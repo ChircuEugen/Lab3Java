@@ -3,7 +3,7 @@ package com.octopus;
 import com.octopus.repository.AuthorRepository;
 import com.octopus.RandomQuotesController;
 import org.junit.jupiter.api.Test;
-//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
@@ -19,10 +19,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 public class RandomQuotesControllerTest {
 
-    //@Autowired
+    @Autowired
     private MockMvc mvc;
 
-    //@Autowired
+    @Autowired
     private AuthorRepository authorRepository;
     
     //@Autowired
