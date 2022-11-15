@@ -49,5 +49,5 @@ public class RandomQuotesControllerTest {
         Author ent = authorRepository.findById(id3);
         String name = ent.getFirstName();
         assertEquals("Jonathan", name);
-    //}
+    }
 }
