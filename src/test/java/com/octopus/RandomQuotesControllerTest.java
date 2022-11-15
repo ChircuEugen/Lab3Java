@@ -16,11 +16,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
-@AutoConfigureMockMvc
+//@AutoConfigureMockMvc
 public class RandomQuotesControllerTest {
-
-    @Autowired
-    private MockMvc mvc;
 
     @Autowired
     private AuthorRepository authorRepository;
@@ -28,11 +25,6 @@ public class RandomQuotesControllerTest {
     @Autowired
     private RandomQuotesController test;
 
-    @Test
-    public void getHello() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/api/quote").accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk());
-    }
 
     @Test
     public void ensureAuthorsExists() {
