@@ -2,6 +2,7 @@ package com.octopus;
 
 import com.octopus.repository.AuthorRepository;
 import com.octopus.repository.QuoteRepository;
+import com.octopus.entity.Author;
 import com.octopus.RandomQuotesController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,8 +38,15 @@ public class RandomQuotesControllerTest {
         assertNotNull(ver);
     }
     
+    //@Test
+    //public void ensureQuotesExists() {
+        //assertTrue(quoteRepository.count() < 0);
+    //}
+    
     @Test
-    public void ensureQuotesExists() {
-        assertTrue(quoteRepository.count() < 0);
+    public void checkAuthorExists() {
+        Author ent = authorRepository.findById(3);
+        String name = ent.firstName;
+        assertEquals("Jonathan", name);
     }
 }
