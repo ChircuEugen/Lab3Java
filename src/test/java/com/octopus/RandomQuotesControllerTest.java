@@ -5,7 +5,7 @@ import com.octopus.repository.QuoteRepository;
 import com.octopus.entity.Author;
 import com.octopus.RandomQuotesController;
 import org.junit.jupiter.api.Test;
-import org.springframework.data.repository.CrudRepository;
+//import org.springframework.data.repository.CrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
