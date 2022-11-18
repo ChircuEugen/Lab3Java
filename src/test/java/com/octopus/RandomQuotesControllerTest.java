@@ -52,7 +52,7 @@ public class RandomQuotesControllerTest {
    // }
     @Test
     public void checkID(){
-        Optional<Author> author = authorRepository.findById(3L);
+        Author author = authorRepository.findById(3L);
         assertEquals("Jonathan", author.getFirstName());
     }
 }
