@@ -54,7 +54,7 @@ public class RandomQuotesControllerTest {
        // assertEquals("Jonathan", name);
    // }
     @Test
-    public void checkID(){
+    public void checkName(){
         Author author = authorRepository.findById(3);
         assertEquals("Charles", author.getFirstName());
     }
