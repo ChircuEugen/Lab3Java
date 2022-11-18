@@ -1,6 +1,7 @@
 package com.octopus;
 
 import java.util.List;
+import java.lang.Iterable;
 import com.octopus.repository.AuthorRepository;
 import com.octopus.repository.QuoteRepository;
 import com.octopus.entity.Author;
@@ -54,7 +55,7 @@ public class RandomQuotesControllerTest {
    // }
     @Test
     public void checkID(){
-        List<Author> authors = authorRepository.findAll();
+        Iterable<Author> authors = authorRepository.findAll();
         Author author = authors.get(2);
         assertEquals("Jonathan", author.getFirstName());
     }
