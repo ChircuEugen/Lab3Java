@@ -63,8 +63,7 @@ public class RandomQuotesController {
             props.load( resourceAsStream );
             return props.get("version").toString();
         } catch (final Exception e) {
-            //return "unknown";
-            return 0;
+            return "unknown";
         }
 
     }
