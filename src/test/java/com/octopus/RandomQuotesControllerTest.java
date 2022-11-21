@@ -32,25 +32,25 @@ public class RandomQuotesControllerTest {
 
 
     @Test
-    public void ensureAuthorsExists() {
+    public void test1() {
         assertTrue(authorRepository.count() != 0);
     }
     
     @Test
-    public void ensureVersion() {
+    public void test2() {
         String ver = test.getVersion();
         assertNotNull(ver);
     }
     
     //@Test
-    //public void checkAuthorExists() {
+    //public void test3() {
         //Author ent = new Author();
         //String name = ent.getFirstName();
        // assertEquals("Jonathan", name);
    // }
     
     @Test
-    public void checkName(){
+    public void test3(){
         Author author = authorRepository.findById(3);
         assertEquals("Charles", author.getFirstName());
     }
